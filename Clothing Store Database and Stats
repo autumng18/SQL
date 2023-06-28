@@ -1,0 +1,21 @@
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, price NUMERIC, aisle INTEGER, stock INTEGER);
+
+INSERT INTO store VALUES (1, "shirt", 9, 3, 15);
+INSERT INTO store VALUES (2, "shorts", 10, 2, 12);
+INSERT INTO store VALUES (3, "dress", 16, 3, 9);
+INSERT INTO store VALUES (4, "socks", 4, 1, 21);
+INSERT INTO store VALUES (5, "heels", 23, 1, 6);
+INSERT INTO store VALUES (6, "boots", 25, 1, 6);
+INSERT INTO store VALUES (7, "shoes", 21, 1, 8);
+INSERT INTO store VALUES (8, "pants", 19, 2, 9);
+INSERT INTO store VALUES (9, "jeans", 24, 2, 7);
+INSERT INTO store VALUES (10, "scrunchies", 6, 4, 12);
+INSERT INTO store VALUES (11, "skirt", 14, 2, 7);
+INSERT INTO store VALUES (12, "leggings", 13, 2, 5);
+INSERT INTO store VALUES (13, "necklace", 8, 4, 18);
+INSERT INTO store VALUES (14, "earrings", 6, 4, 12);
+INSERT INTO store VALUES (15, "bracelet", 8, 4, 14);
+
+SELECT * FROM store ORDER BY price;
+SELECT SUM(stock) FROM store ORDER BY price;
