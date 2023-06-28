@@ -1,3 +1,4 @@
+# Check out my store database! I have described each piece of code and displayed my database in order by price.
 
 CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, price NUMERIC, aisle INTEGER, stock INTEGER);
 
